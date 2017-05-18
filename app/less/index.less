@@ -1,12 +1,10 @@
+.main-page{
+  height: 100%;
+}
+
 *{
-  font-family: 'PT Sans', sans-serif ;
+  font-family: 'PT Sans', sans-serif;
 }
-
-html,body {
-  height:100%;
-  margin:auto;
-}
-
 html>body .content {
   height:auto;
 }
@@ -32,9 +30,9 @@ html>body .content {
   vertical-align: middle;
   float: none;
 }
-
 h2 {
   font-size: 22pt;
+
 }
 h3 {
   font-size: 28pt;
@@ -53,13 +51,11 @@ h4{
 
 .bar{
   width: 100px;
-  height: 1px;
+  height: 3px;
   display: inline-block;
   vertical-align: middle;
   position: relative;
-  top: 0px;
-  margin-bottom: 4pt;
-
+  top: -5px;
 }
 
 button{
@@ -74,92 +70,75 @@ button{
     outline: none;
   }
 }
-
-#hero-cnt{
+#hero-cnt {
   background: url(../assets/img/herobg.jpg) center center no-repeat scroll;
-  .hero{
-    height: 800px;
-    align-self: left;
-    background: none;
-    border-radius: 0px;
-    }
-    .nav{text-align: right;}
-
-
-      li{
-        font-size:14pt;
-        &.active{
-          font-size: 20pt;
-          letter-spacing: 2pt;
-          line-height: 140%;
-        }
-        &.active, &:hover{
-          background: none;
-        }
-        a{
-          color: white;
-          padding: 0;
-          &:hover{
-            background: none;
-          }
-        }
-      }
-
-    .main-text{
-      color: white;
-      .heading{
-        font-size: 33pt;
-        letter-spacing: 5pt;
-        text-shadow: 2px 2px grey;
-        line-height: 110%;
-      }
-      .sub-heading{
-        font-size: 14pt;
-        font-family: "PT Serif";
-        letter-spacing: 4pt;
-        line-height: 300%;
-      }
-      button{
-        margin-top: 80px;
-        }
-      }
-    .social-cnt{
-      display: inline-block;
-      position: relative;
-      transform: rotate(90deg);
-      top: 135px;
-      .social{
-        color: white;
-        a{
-          color: white;
-        }
-      }
-    }
-  }
- }
 }
-
-
+#hero-cnt .hero {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background: none;
+  border-radius: 0px;
+}
+#hero-cnt .hero .nav li {
+  font-size: 14pt;
+}
+#hero-cnt .hero .nav li.active {
+  font-size: 20pt;
+}
+#hero-cnt .hero .nav li.active,
+#hero-cnt .hero .nav li:hover {
+  background: none;
+}
+#hero-cnt .hero .nav li a {
+  color: white;
+  padding: 0;
+}
+#hero-cnt .hero .nav li a:hover {
+  background: none;
+  color: white;
+}
+#hero-cnt .hero .main-text {
+  color: white;
+}
+#hero-cnt .hero .main-text .heading {
+  font-size: 33pt;
+  letter-spacing: 3pt;
+  text-shadow: 1px 1px #CCFFCC;
+}
+#hero-cnt .hero .main-text .sub-heading {
+  font-size: 12pt;
+}
+#hero-cnt .hero .main-text button {
+  margin-top: 120px;
+}
+#hero-cnt .hero .social-cnt {
+  display: inline-block;
+  position: relative;
+  transform: rotate(90deg);
+  top: 135px;
+}
+#hero-cnt .hero .social-cnt .social {
+  color: white;
+}
+#hero-cnt .hero .social-cnt .social a {
+  color: white;
+}
 #one{
   background: #f2f1f1;
   padding-top: 80px;
-  padding-bottom: 90px;
+  padding-bottom: 100px;
   .row:not(:first-child){
     margin-top: 40px;
-    }
-
+  }
   .black-div{
     background: black;
     width: 100%;
     height: 200px;
   }
-
   button{
     border: 2px solid #252525;
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
-
   .bar{
     background:#252525 ;
   }
@@ -175,18 +154,16 @@ button{
     display: flex;
     &>.one-text{
       align-self: center;
-      font-size: 20pt;
     }
     @media(max-width: 992px){
       display: block;
     }
-
   }
 }
 
 #carousel-cnt{
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 5%;
+  padding-bottom: 5%;
   #carousel{
     height: 500px;
     .carousel{
@@ -225,7 +202,7 @@ button{
     padding-top: 30px;
     padding-bottom: 30px;
     #carousel{
-      height: 300px;
+      height: auto;
       .item-content-cnt{
         display: block !important;
       }
@@ -284,7 +261,7 @@ button{
 
 #map{
   width: 100%;
-  height: 400px;
+  height: 350px;
   @media (max-width: 992px) {
     height: 300px;
   }
