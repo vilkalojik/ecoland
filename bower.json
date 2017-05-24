@@ -17,6 +17,7 @@
   "dependencies": {
     "font-awesome": "^4.7.0",
     "materialize": "^0.98.2",
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "parallax.js": "^1.4.2"
   }
 }
