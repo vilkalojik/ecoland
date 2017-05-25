@@ -28,7 +28,8 @@ var path = {
     vendor:{
         js:[
             vendor + '/jquery/dist/jquery.min.js',
-            vendor + '/bootstrap/dist/js/bootstrap.min.js'
+            vendor + '/bootstrap/dist/js/bootstrap.min.js',
+            vendor + '/parallax.js/parallax.js'
         ],
         css:[
             vendor + '/font-awesome/css/font-awesome.min.css',

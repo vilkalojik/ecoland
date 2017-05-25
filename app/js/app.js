@@ -13,10 +13,10 @@ var initMap = function() {
 $(document).ready(function () {
     initMap();
 
-    $('.carousel').carousel({
-        interval: 5000,
-        pause: "false"
-    });
+    $('.carousel').carousel({ interval: 5000, pause: "false" });
+    $('.services .carousel').carousel({ interval: 2000 });
+    $('#hero-cnt.parallax-window').parallax({imageSrc: './assets/img/herobg.jpg'});
+    $('#gallery.parallax-window').parallax({imageSrc: './assets/img/gallerybg.jpg'});
 
     var setCarouselImgHeight = function () {
         $('#carousel .img-cnt').each(function () { $(this).height($('#carousel').height()); })
