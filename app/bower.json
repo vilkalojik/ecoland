@@ -1,0 +1,22 @@
+{
+  "name": "less",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "rozanovz <rozanovz13@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "bootstrap": "^3.3.7",
+    "parallax.js": "^1.4.2"
+  }
+}
