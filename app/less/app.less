@@ -49,8 +49,8 @@ h1, h2, h3, h4, h5, h6{
   top: -5px;
 }
 
-button, input[type="submit"]{
-  &.btn-default{
+button, input[type="submit"], input, textarea{
+  &.btn-default, &.input-default{
     background: none;
     border: 2px solid white;
     box-shadow: none;
@@ -60,6 +60,11 @@ button, input[type="submit"]{
     padding: 20px 40px;
     outline: none;
   }
+}
+
+textarea.input-default{
+  width: 100%;
+  resize: none;
 }
 
 #hero-cnt{
@@ -264,5 +269,45 @@ button, input[type="submit"]{
   padding: 20px 0 0 0;
   a{
     color: #353535;
+  }
+}
+
+.tiles {
+  display: block;
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+.tile {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  position: relative;
+  float: left;
+  &-box {
+    width: 50%;
+    &:after {
+      content: "";
+      padding-top: 100%;
+      display: table;
+    }
+  }
+  &-rec {
+    width: 100%;
+    &:after {
+      content: "";
+      display: block;
+      padding-top: 50%;
+    }
+  }
+  &-img {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
+    background: #888;
   }
 }
